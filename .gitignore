@@ -2,4 +2,3 @@
 *.log
 deploy-config.json
 .env
-CNAME
