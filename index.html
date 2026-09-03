@@ -1,0 +1,839 @@
+<!-- Updated for deployment -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E9RM7QJ1EH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E9RM7QJ1EH');
+
+      // Conversion tracking
+      document.addEventListener('DOMContentLoaded', function() {
+        // Track phone clicks
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
+          el.addEventListener('click', function() {
+            gtag('event', 'phone_click', {
+              'event_category': 'Contact',
+              'event_label': 'Phone Call',
+              'value': el.getAttribute('href')
+            });
+          });
+        });
+
+        // Track email clicks
+        document.querySelectorAll('a[href^="mailto:"]').forEach(function(el) {
+          el.addEventListener('click', function() {
+            gtag('event', 'email_click', {
+              'event_category': 'Contact',
+              'event_label': 'Email',
+              'value': el.getAttribute('href')
+            });
+          });
+        });
+
+        // Track form submissions
+        document.querySelectorAll('form').forEach(function(form) {
+          form.addEventListener('submit', function() {
+            gtag('event', 'form_submission', {
+              'event_category': 'Contact',
+              'event_label': 'Contact Form Submitted',
+              'value': window.location.pathname
+            });
+          });
+        });
+
+        // Track consultation button clicks
+        document.querySelectorAll('a[href*="contact"]').forEach(function(el) {
+          el.addEventListener('click', function() {
+            gtag('event', 'consultation_request', {
+              'event_category': 'Engagement',
+              'event_label': 'Inquire About Availability Click'
+            });
+          });
+        });
+      });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert psychological consulting for high-conflict child custody litigation. Dr. Kristin Tolbert provides specialized expertise to elite family law firms handling high-asset, high-conflict custody matters nationally.">
+    <link rel="canonical" href="https://www.childcustodyconsulting.com/">
+    <meta name="msvalidate.01" content="AB1FD878C4E0B751F634CB1C542FB716">
+    <meta property="og:title" content="Expert Psychological Consulting for High-Conflict Custody | Dr. Kristin Tolbert">
+    <meta property="og:description" content="Expert psychological consulting for high-conflict child custody litigation. Dr. Kristin Tolbert provides specialized expertise to elite family law firms handling high-asset, high-conflict custody matters nationally.">
+    <meta property="og:url" content="https://www.childcustodyconsulting.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dr. Kristin Tolbert | Child Custody Consulting">
+    <meta property="og:image" content="https://www.childcustodyconsulting.com/dr-kristin-tolbert.jpg">
+    <meta property="og:image:alt" content="Dr. Kristin Tolbert - Child Custody Litigation Consultant">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.childcustodyconsulting.com/dr-kristin-tolbert.jpg">
+    <meta name="twitter:title" content="Expert Psychological Consulting for High-Conflict Custody | Dr. Kristin Tolbert">
+    <meta name="twitter:description" content="Expert psychological consulting for high-conflict child custody litigation. Dr. Kristin Tolbert provides specialized expertise to elite family law firms handling high-asset, high-conflict custody matters nationally.">
+    <title>Expert Psychological Consulting for High-Conflict Custody | Dr. Kristin Tolbert</title>
+    <link rel="stylesheet" href="dr-tolbert-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#1a1a2e">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                Dr. Kristin Tolbert
+                <span>EXPERT WITNESS | LITIGATION CONSULTANT</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="about-dr-tolbert.html">About</a>
+                <a href="services-attorneys.html">For Attorneys</a>
+                <a href="credentials.html">Credentials</a>
+                <a href="services-families.html">For Families</a>
+                <a href="blog.html">Blog</a>
+                <a href="tel:+15614292140" class="nav-phone">561-429-2140</a>
+                <a href="contact-dr-tolbert.html" class="btn btn-primary">Inquire About Availability</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-split">
+                <div class="hero-content">
+                    <div style="display: inline-block; background: rgba(255, 255, 255, 0.15); padding: var(--spacing-2) var(--spacing-6); border-radius: 50px; margin-bottom: var(--spacing-6); border: 1px solid rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px);">
+                        <span style="color: var(--color-accent-light); font-weight: 700; font-size: var(--text-sm); letter-spacing: 0.08em;">LICENSED PSYCHOLOGIST | EXPERT WITNESS | CUSTODY LITIGATION SPECIALIST</span>
+                    </div>
+
+                    <h1>Expert Witness &amp; Strategic Consultant for High-Conflict Custody Cases</h1>
+
+                    <p style="font-size: var(--text-xl); line-height: 1.6; margin-bottom: var(--spacing-8);">When the stakes are this high, strategy must be flawless. Dr. Kristin Tolbert provides expert witness testimony and strategic consultation to elite family law firms handling high-asset, high-conflict custody matters nationally.</p>
+
+                    <div style="display: flex; gap: var(--spacing-4); flex-wrap: wrap; margin-bottom: var(--spacing-12);">
+                        <a href="contact-dr-tolbert.html" class="btn btn-primary btn-large">Request Confidential Case Review</a>
+                        <a href="tel:+15614292140" class="btn btn-secondary btn-large" style="background: rgba(255, 255, 255, 0.95);">Call 561-429-2140</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">400+</span>
+                            <span class="hero-stat-label">Expert Testimonies</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">15+</span>
+                            <span class="hero-stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-photo">
+                    <img src="dr-kristin-tolbert.jpg" alt="Dr. Kristin Tolbert, Psy.D. - Child Custody Litigation Consultant and Expert Witness" width="380" height="380" loading="eager">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONFIDENTIALITY STATEMENT -->
+    <section style="background: var(--color-gray-50); padding: var(--spacing-8) 0; border-top: 1px solid var(--color-gray-200); border-bottom: 1px solid var(--color-gray-200);">
+        <div class="container">
+            <p style="font-size: var(--text-lg); color: var(--color-gray-800); text-align: center; margin: 0; max-width: 1000px; margin: 0 auto; line-height: 1.6;">
+                <strong style="color: var(--color-primary);">Confidentiality & Privilege:</strong> All consultations and case materials are handled with strict confidentiality. Engagement under attorney-client privilege ensures the highest level of protection for sensitive matters.
+            </p>
+        </div>
+    </section>
+
+    <!-- HOW I HELP ATTORNEYS SECTION -->
+    <section class="section" style="background: var(--color-white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Strategic Litigation Partnership for High-Stakes Custody Matters</h2>
+                <p>Three levels of expert psychological support for sophisticated legal teams</p>
+            </div>
+
+            <div class="grid grid-3" style="margin-top: var(--spacing-12);">
+                <div class="card" style="border-top: 3px solid var(--color-primary);">
+                    <div style="display: inline-block; background: var(--color-primary); color: white; padding: var(--spacing-2) var(--spacing-4); border-radius: var(--radius-sm); font-size: var(--text-xs); font-weight: 700; margin-bottom: var(--spacing-4); letter-spacing: 0.05em;">TIER 1</div>
+                    <h3>Case Strategy & Consulting</h3>
+                    <p style="margin-bottom: var(--spacing-4);">The most sophisticated legal teams recognize that non-testifying psychology consultants provide strategic advantages that reshape case outcomes.</p>
+                    <p>Protected under attorney work product privilege, Dr. Tolbert integrates into your litigation team to build case plans, develop themes and narratives, identify psychological dynamics, and craft comprehensive strategies for complex custody matters.</p>
+                    <a href="attorney-collaboration.html" style="color: var(--color-gold-primary); font-weight: 600; margin-top: var(--spacing-4); display: inline-block;">View Attorney Collaboration</a>
+                </div>
+
+                <div class="card" style="border-top: 3px solid var(--color-primary);">
+                    <div style="display: inline-block; background: var(--color-primary); color: white; padding: var(--spacing-2) var(--spacing-4); border-radius: var(--radius-sm); font-size: var(--text-xs); font-weight: 700; margin-bottom: var(--spacing-4); letter-spacing: 0.05em;">TIER 2</div>
+                    <h3>Work Product Review & Analysis</h3>
+                    <p style="margin-bottom: var(--spacing-4);">Systematic critique of opposing experts' evaluations, reports, and testimony to expose methodological flaws, procedural violations, and unsupported conclusions.</p>
+                    <p>Deliverables include comprehensive written critiques (15-25 pages) and targeted cross-examination question sets (40-70 questions) designed for maximum courtroom impact.</p>
+                    <a href="services-attorneys.html" style="color: var(--color-gold-primary); font-weight: 600; margin-top: var(--spacing-4); display: inline-block;">View Services</a>
+                </div>
+
+                <div class="card" style="border-top: 3px solid var(--color-primary);">
+                    <div style="display: inline-block; background: var(--color-primary); color: white; padding: var(--spacing-2) var(--spacing-4); border-radius: var(--radius-sm); font-size: var(--text-xs); font-weight: 700; margin-bottom: var(--spacing-4); letter-spacing: 0.05em;">TIER 3</div>
+                    <h3>Expert Testimony & Rebuttal</h3>
+                    <p style="margin-bottom: var(--spacing-4);">Courtroom testimony as retained expert or rebuttal witness, delivering clear, credible psychological evidence that withstands rigorous cross-examination.</p>
+                    <p>Daubert/Frye ready. Court-qualified expert witness with extensive experience before family and dependency court judges across multiple jurisdictions.</p>
+                    <a href="services-attorneys.html" style="color: var(--color-gold-primary); font-weight: 600; margin-top: var(--spacing-4); display: inline-block;">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AREAS OF EXPERTISE -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Areas Does Dr. Tolbert Specialize In?</h2>
+                <p>Deep knowledge of complex psychological patterns in custody disputes</p>
+            </div>
+
+            <div class="grid grid-2" style="gap: var(--spacing-8); max-width: 1000px; margin: 0 auto;">
+                <div class="card">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-4);"><a href="narcissistic-abuse-guide.html" style="color: var(--color-primary); text-decoration: none;">Narcissistic Abuse Recognition</a></h4>
+                    <ul class="credential-list">
+                        <li><a href="blog/darvo-in-the-courtroom.html" class="content-link">DARVO patterns</a> and manipulation tactics</li>
+                        <li>Gaslighting and reality distortion</li>
+                        <li>Triangulation in family systems</li>
+                        <li>Covert vs. overt narcissistic behaviors</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-4);">Parental Alienation</h4>
+                    <ul class="credential-list">
+                        <li><a href="blog/parental-alienation-early-warning-signs.html" class="content-link">Identification of alienating behaviors</a></li>
+                        <li>Impact on child development</li>
+                        <li>Differentiation from estrangement</li>
+                        <li>Evidence-based intervention strategies</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-4);"><a href="custody-evaluation-red-flags.html" style="color: var(--color-primary); text-decoration: none;">Psychological Evaluation Analysis</a></h4>
+                    <ul class="credential-list">
+                        <li>Assessment methodology review</li>
+                        <li>Test validity and reliability analysis</li>
+                        <li><a href="blog/hidden-cost-of-flawed-custody-evaluations.html" class="content-link">Identification of evaluator bias</a></li>
+                        <li>Alternative interpretation of findings</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-4);">Child Custody Factors</h4>
+                    <ul class="credential-list">
+                        <li>Best interests of child analysis</li>
+                        <li>Parenting capacity evaluation</li>
+                        <li>Safety and risk assessment</li>
+                        <li>Attachment and bonding patterns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATTORNEY COLLABORATION -->
+    <section class="section" style="background: var(--color-white);">
+        <div class="container">
+            <div class="grid grid-2" style="gap: var(--spacing-16); align-items: center;">
+                <div>
+                    <h2 style="margin-bottom: var(--spacing-6);">Trusted Collaboration with Family Law Attorneys</h2>
+                    <p style="font-size: var(--text-lg); margin-bottom: var(--spacing-8);">
+                        Dr. Tolbert works directly with family law attorneys, providing the psychological expertise needed to build stronger cases and achieve better outcomes for clients.
+                    </p>
+
+                    <h4 style="margin-bottom: var(--spacing-4);">Services for Attorneys:</h4>
+                    <ul class="credential-list" style="margin-bottom: var(--spacing-8);">
+                        <li>Behind-the-scenes litigation consultation under attorney-client privilege</li>
+                        <li>Critique of custody evaluations and social study reports</li>
+                        <li>Deposition and cross-examination question development</li>
+                        <li>Daubert and Frye challenge preparation</li>
+                        <li>Expert witness identification, vetting, and preparation</li>
+                        <li>Trial theme development and case presentation strategy</li>
+                    </ul>
+
+                    <a href="attorney-collaboration.html" class="btn btn-primary btn-large">Learn About Attorney Collaboration</a>
+                </div>
+
+                <div>
+                    <div class="card" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); color: var(--color-white);">
+                        <h3 style="color: var(--color-white); margin-bottom: var(--spacing-6);">Qualifications</h3>
+
+                        <div style="margin-bottom: var(--spacing-6);">
+                            <h5 style="color: var(--color-accent-light); margin-bottom: var(--spacing-3);">Education & Credentials</h5>
+                            <p style="color: rgba(255, 255, 255, 0.9); font-size: var(--text-sm);">
+                                Psy.D., Psychology<br>
+                                Florida Licensed Psychologist<br>
+                                Specialized in high-conflict custody<br>
+                                Specialized in narcissistic abuse
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: var(--spacing-6);">
+                            <h5 style="color: var(--color-accent-light); margin-bottom: var(--spacing-3);">Court Experience</h5>
+                            <p style="color: rgba(255, 255, 255, 0.9); font-size: var(--text-sm);">
+                                Court-qualified expert witness<br>
+                                Nationwide &amp; international consultation<br>
+                                Extensive courtroom testimony experience<br>
+                                Family and dependency court cases
+                            </p>
+                        </div>
+
+                        <div>
+                            <h5 style="color: var(--color-accent-light); margin-bottom: var(--spacing-3);">Areas of Focus</h5>
+                            <p style="color: rgba(255, 255, 255, 0.9); font-size: var(--text-sm); margin-bottom: 0;">
+                                High-conflict custody disputes<br>
+                                Narcissistic abuse in family systems<br>
+                                Parental alienation cases<br>
+                                Evaluation critique and analysis
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MULTI-JURISDICTIONAL & INTERNATIONAL EXPERIENCE -->
+    <section class="section" style="background: var(--color-white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Expert Witness Qualifications &amp; Litigation Consulting Reach</h2>
+                <p>Court-qualified expert witness and litigation consultant serving attorneys nationally and internationally</p>
+            </div>
+
+            <div class="grid grid-2" style="gap: var(--spacing-12); max-width: 1100px; margin: 0 auto;">
+                <div class="card" style="border-left: 4px solid var(--color-accent);">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-4);">Expert Witness Testimony</h4>
+                    <p style="margin-bottom: var(--spacing-4);">
+                        Dr. Tolbert is a Florida Licensed Psychologist who has been qualified as an expert witness in state court proceedings. She provides expert testimony in jurisdictions that admit her credentials, with both in-person and remote testimony available where permitted by the court.
+                    </p>
+                    <p style="margin-top: var(--spacing-4); font-size: var(--text-sm); color: var(--color-gray-600);">
+                        <strong>Litigation consulting services</strong> (non-testifying) are available remotely to family law attorneys anywhere in the United States and internationally.
+                    </p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid var(--color-accent);">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-4);">International &amp; Hague Convention Cases</h4>
+                    <p style="margin-bottom: var(--spacing-4);">Experience in complex cross-border custody disputes, including:</p>
+                    <ul class="credential-list">
+                        <li>Hague Convention child abduction matters</li>
+                        <li>International relocation disputes</li>
+                        <li>Multi-jurisdictional custody litigation</li>
+                        <li>Cross-border expert critique and strategy</li>
+                    </ul>
+                    <p style="margin-top: var(--spacing-4); font-size: var(--text-sm); color: var(--color-gray-600);">
+                        Dr. Tolbert provides litigation consulting on international matters involving complex relocation, jurisdictional issues, and psychological expert critique.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="section" style="background: var(--color-primary); color: var(--color-white); text-align: center;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 style="color: var(--color-white); margin-bottom: var(--spacing-6);">Need Expert Testimony or Case Consultation?</h2>
+                <p style="font-size: var(--text-xl); color: rgba(255, 255, 255, 0.95); margin-bottom: var(--spacing-4);">
+                    Initial attorney inquiries receive a same-day response. Priority scheduling is available for matters with imminent court dates.
+                </p>
+                <p style="font-size: var(--text-base); color: rgba(255, 255, 255, 0.85); margin-bottom: var(--spacing-8); font-style: italic;">
+                    To maintain the highest level of involvement in each high-stakes matter, Dr. Tolbert accepts only a limited number of new litigation engagements per quarter.
+                </p>
+
+                <div style="display: flex; gap: var(--spacing-4); justify-content: center; flex-wrap: wrap; margin-bottom: var(--spacing-10);">
+                    <a href="contact-dr-tolbert.html" class="btn btn-primary btn-large" style="background: var(--color-accent); border-color: var(--color-accent);">Inquire About Availability</a>
+                    <a href="tel:+15614292140" class="btn btn-large" style="background: var(--color-white); color: var(--color-primary); border-color: var(--color-white);">Call 561-429-2140</a>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-6); max-width: 600px; margin: 0 auto;">
+                    <div>
+                        <p style="margin: 0; font-size: var(--text-sm); color: rgba(255, 255, 255, 0.8);">
+                            <strong style="display: block; color: var(--color-accent-light); margin-bottom: var(--spacing-2);">Email</strong>
+                            <a href="mailto:DrTolbert@ChildCustodyConsulting.com" style="color: rgba(255, 255, 255, 0.9); text-decoration: none;">DrTolbert@ChildCustodyConsulting.com</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p style="margin: 0; font-size: var(--text-sm); color: rgba(255, 255, 255, 0.8);">
+                            <strong style="display: block; color: var(--color-accent-light); margin-bottom: var(--spacing-2);">Phone</strong>
+                            <a href="tel:+15614292140" style="color: rgba(255, 255, 255, 0.9); text-decoration: none;">561-429-2140</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container" style="max-width: 900px;">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: var(--spacing-6);">
+                <div style="background: var(--color-white); padding: var(--spacing-6) var(--spacing-8); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                    <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-3); font-size: var(--text-lg);">What is a psychology litigation consultant?</h3>
+                    <p style="color: var(--color-gray-700); line-height: 1.7; margin: 0;">A psychology litigation consultant is a licensed psychologist who works behind the scenes with attorneys to analyze psychological evidence, critique custody evaluations, develop cross-examination strategies, and identify credible expert witnesses. All work is protected under attorney-client privilege. <a href="what-is-a-litigation-consultant.html" class="content-link">Learn more about the role</a></p>
+                </div>
+
+                <div style="background: var(--color-white); padding: var(--spacing-6) var(--spacing-8); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                    <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-3); font-size: var(--text-lg);">How does Dr. Tolbert help family law attorneys?</h3>
+                    <p style="color: var(--color-gray-700); line-height: 1.7; margin: 0;">Dr. Tolbert integrates into legal teams to provide strategic psychological expertise in high-conflict custody cases. This includes reviewing and critiquing custody evaluations, developing targeted cross-examination questions, identifying patterns of narcissistic abuse or parental alienation, and helping attorneys understand complex psychological dynamics. <a href="services-attorneys.html" class="content-link">View services for attorneys</a></p>
+                </div>
+
+                <div style="background: var(--color-white); padding: var(--spacing-6) var(--spacing-8); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                    <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-3); font-size: var(--text-lg);">Where does Dr. Tolbert provide expert witness testimony and consultation?</h3>
+                    <p style="color: var(--color-gray-700); line-height: 1.7; margin: 0;">Dr. Tolbert is a Florida Licensed Psychologist who has been qualified as an expert witness in state court proceedings and provides expert testimony in jurisdictions that admit her credentials. She offers behind-the-scenes litigation consultation to family law attorneys throughout the United States and internationally, with all remote work conducted via phone and secure video conference.</p>
+                </div>
+
+                <div style="background: var(--color-white); padding: var(--spacing-6) var(--spacing-8); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                    <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-3); font-size: var(--text-lg);">How are engagements structured?</h3>
+                    <p style="color: var(--color-gray-700); line-height: 1.7; margin: 0;">Engagement terms are discussed during a confidential case review and are structured around case complexity and scope. Initial case reviews are available by contacting Dr. Tolbert's office at 561-429-2140 or DrTolbert@ChildCustodyConsulting.com. All attorney consultations are protected under attorney-client privilege.</p>
+                </div>
+
+                <div style="background: var(--color-white); padding: var(--spacing-6) var(--spacing-8); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                    <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-3); font-size: var(--text-lg);">Does Dr. Tolbert understand Florida custody law?</h3>
+                    <p style="color: var(--color-gray-700); line-height: 1.7; margin: 0;">Yes. As a Florida Licensed Psychologist, Dr. Tolbert has extensive expertise in Florida custody law, particularly Florida Statute §61.13 (Best Interests of the Child) and Florida Statute §61.20 (Social Investigations). She applies these statutory factors to her psychological analysis and helps attorneys align psychological evidence with Florida's legal requirements for parental responsibility and time-sharing determinations. <a href="florida-custody-faq.html" style="color: var(--color-gold-primary); font-weight: 600;">Learn more about Florida custody law →</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL DISCLAIMER -->
+    <section style="background: var(--color-gray-100); padding: var(--spacing-6) 0; border-top: 1px solid var(--color-gray-200);">
+        <div class="container">
+            <p style="font-size: var(--text-sm); color: var(--color-gray-600); text-align: center; margin: 0; max-width: 900px; margin: 0 auto;">
+                <strong>Disclaimer:</strong> Dr. Tolbert is a licensed psychologist, not an attorney. She does not provide legal advice or legal representation. Litigation consulting does not create a psychotherapist-patient relationship. <a href="disclaimer.html" style="color: var(--color-navy-primary); font-weight: 600;">Full Disclaimer</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4" style="margin-bottom: var(--spacing-12);">
+                <div>
+                    <h4>Dr. Kristin Tolbert</h4>
+                    <p>Florida Licensed Psychologist<br>Child Custody Litigation Consultant<br>Expert Witness</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services-attorneys.html">For Attorneys</a></li>
+                        <li><a href="services-families.html">For Families</a></li>
+                        <li><a href="attorney-collaboration.html">Attorney Collaboration</a></li>
+                        <li><a href="consultation-booking.html">Book Consultation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="what-is-a-litigation-consultant.html">What Is a Litigation Consultant?</a></li>
+                        <li><a href="custody-evaluation-red-flags.html">Custody Evaluation Red Flags</a></li>
+                        <li><a href="narcissistic-abuse-guide.html">Narcissistic Abuse Guide</a></li>
+                        <li><a href="preparing-for-your-custody-case.html">Preparing for Your Case</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p style="margin-bottom: var(--spacing-2); font-size: var(--text-sm);">
+                        <strong>Phone:</strong><br>
+                        <a href="tel:+15614292140" style="color: var(--color-accent-light);">561-429-2140</a>
+                    </p>
+                    <p style="margin-bottom: var(--spacing-4); font-size: var(--text-sm);">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:DrTolbert@ChildCustodyConsulting.com" style="color: var(--color-accent-light);">DrTolbert@ChildCustodyConsulting.com</a>
+                    </p>
+                    <a href="contact-dr-tolbert.html" class="btn btn-primary" style="width: 100%;">Inquire About Availability</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Kristin Tolbert, Psy.D. | Florida Licensed Psychologist</p>
+                <p style="margin-top: var(--spacing-2); font-size: var(--text-xs);">
+                    <a href="privacy-policy.html" style="color: var(--color-accent-light);">Privacy Policy</a> |
+                    <a href="disclaimer.html" style="color: var(--color-accent-light);">Legal Disclaimer</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://www.childcustodyconsulting.com/#kristin-tolbert",
+          "name": "Dr. Kristin M. Tolbert",
+          "honorificPrefix": "Dr.",
+          "honorificSuffix": "Psy.D.",
+          "jobTitle": "Child Custody Litigation Consultant",
+          "description": "Florida-licensed psychologist specializing in high-conflict child custody matters, expert witness testimony, and litigation consulting for family law attorneys.",
+          "url": "https://www.childcustodyconsulting.com",
+          "email": "DrTolbert@ChildCustodyConsulting.com",
+          "telephone": "+1-561-429-2140",
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Psy.D., Psychology"
+          },
+          "knowsAbout": [
+            "Child Custody Psychology",
+            "Child Custody Evaluation",
+            "Parental Alienation",
+            "Narcissistic Personality Disorder",
+            "High-Conflict Custody Cases",
+            "Expert Witness Testimony",
+            "Family Law Psychology"
+          ],
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Professional License",
+              "name": "Florida Licensed Psychologist"
+            }
+          ],
+          "sameAs": [
+            "https://www.childcustodyconsulting.com/about-dr-tolbert.html",
+            "https://www.childcustodyconsulting.com/credentials.html"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://www.childcustodyconsulting.com/#service",
+          "name": "Child Custody Consulting - Dr. Kristin M. Tolbert",
+          "alternateName": "Dr. Tolbert Child Custody Consulting",
+          "description": "Expert witness and litigation consulting services for family law attorneys in high-conflict child custody cases. Specializing in custody evaluation critique, parental alienation assessment, and narcissistic abuse pattern identification.",
+          "url": "https://www.childcustodyconsulting.com",
+          "logo": "https://www.childcustodyconsulting.com/dr-kristin-tolbert.jpg",
+          "image": "https://www.childcustodyconsulting.com/dr-kristin-tolbert.jpg",
+          "telephone": "+1-561-429-2140",
+          "email": "DrTolbert@ChildCustodyConsulting.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "FL",
+            "addressCountry": "US"
+          },
+          "areaServed": [
+            {
+              "@type": "Country",
+              "name": "United States"
+            },
+            {
+              "@type": "Place",
+              "name": "Worldwide"
+            }
+          ],
+          "priceRange": "$$$$",
+          "provider": {
+            "@id": "https://www.childcustodyconsulting.com/#kristin-tolbert"
+          },
+          "serviceType": [
+            "Expert Witness Testimony",
+            "Litigation Consulting",
+            "Custody Evaluation Review",
+            "Parental Alienation Assessment",
+            "Child Custody Psychology Consultation"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Child Custody Consulting Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Behind-the-Scenes Litigation Consulting",
+                  "description": "Confidential consultation under attorney-client privilege for case strategy, evaluation critique, and cross-examination development.",
+                  "provider": {
+                    "@id": "https://www.childcustodyconsulting.com/#kristin-tolbert"
+                  }
+                },
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Expert Witness Testimony",
+                  "description": "Expert witness testimony in family and dependency court cases across multiple states.",
+                  "provider": {
+                    "@id": "https://www.childcustodyconsulting.com/#kristin-tolbert"
+                  }
+                },
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Parent/Family Consultation",
+                  "description": "Direct consultation for parents navigating high-conflict custody cases.",
+                  "provider": {
+                    "@id": "https://www.childcustodyconsulting.com/#kristin-tolbert"
+                  }
+                },
+                "priceCurrency": "USD"
+              }
+            ]
+          },
+          "knowsAbout": [
+            "Child Custody Psychology",
+            "Child Custody Evaluation Critique",
+            "Litigation Consulting",
+            "High-Conflict Custody Disputes"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.childcustodyconsulting.com/#website",
+          "url": "https://www.childcustodyconsulting.com",
+          "name": "Dr. Kristin M. Tolbert - Child Custody Consulting",
+          "description": "Expert witness and psychological consulting services for family law attorneys specializing in high-conflict child custody cases.",
+          "publisher": {
+            "@id": "https://www.childcustodyconsulting.com/#kristin-tolbert"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.childcustodyconsulting.com/#webpage",
+          "url": "https://www.childcustodyconsulting.com",
+          "name": "Dr. Kristin Tolbert | Child Custody Litigation Consultant",
+          "isPartOf": {
+            "@id": "https://www.childcustodyconsulting.com/#website"
+          },
+          "about": {
+            "@id": "https://www.childcustodyconsulting.com/#service"
+          },
+          "description": "Dr. Kristin Tolbert - Expert psychological consulting for family law attorneys. Specializing in high-conflict custody cases, narcissistic abuse, and evaluation critique.",
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is a psychology litigation consultant?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A psychology litigation consultant is a licensed psychologist who works behind the scenes with attorneys to analyze psychological evidence, critique custody evaluations, develop cross-examination strategies, and identify credible expert witnesses. All work is protected under attorney-client privilege."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does Dr. Tolbert help family law attorneys?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dr. Tolbert integrates into legal teams to provide strategic psychological expertise in high-conflict custody cases. This includes reviewing and critiquing custody evaluations, developing targeted cross-examination questions, identifying patterns of narcissistic abuse or parental alienation, and helping attorneys understand complex psychological dynamics."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where does Dr. Tolbert provide expert witness testimony and consultation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dr. Tolbert is a Florida Licensed Psychologist who has been qualified as an expert witness in state court proceedings and provides expert testimony in jurisdictions that admit her credentials. She offers behind-the-scenes litigation consultation to family law attorneys throughout the United States and internationally, with all remote work conducted via phone and secure video conference."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How are engagements with Dr. Tolbert structured?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Engagement terms are discussed during a confidential case review and are structured around case complexity and scope. Initial case reviews are available by contacting Dr. Tolbert's office at 561-429-2140 or DrTolbert@ChildCustodyConsulting.com. All attorney consultations are protected under attorney-client privilege."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Dr. Tolbert understand Florida custody law?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. As a Florida Licensed Psychologist, Dr. Tolbert has extensive expertise in Florida custody law, particularly Florida Statute §61.13 (Best Interests of the Child) and Florida Statute §61.20 (Social Investigations). She applies these statutory factors to her psychological analysis and helps attorneys align psychological evidence with Florida's legal requirements for parental responsibility and time-sharing determinations."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Enhanced LocalBusiness Schema for Florida AI Optimization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Child Custody Consulting - Dr. Kristin M. Tolbert",
+      "alternateName": "Dr. Tolbert Child Custody Consulting",
+      "description": "Florida-licensed psychologist providing expert witness testimony and litigation consulting for family law attorneys in child custody cases throughout Florida, including Palm Beach, Broward, and Miami-Dade counties.",
+      "url": "https://www.childcustodyconsulting.com",
+      "telephone": "+1-561-429-2140",
+      "email": "DrTolbert@ChildCustodyConsulting.com",
+      "priceRange": "$400/hour",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "FL",
+        "addressCountry": "US",
+        "addressLocality": "Florida"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Florida",
+          "sameAs": "https://en.wikipedia.org/wiki/Florida"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Palm Beach County",
+          "containedIn": {
+            "@type": "State",
+            "name": "Florida"
+          }
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Broward County",
+          "containedIn": {
+            "@type": "State",
+            "name": "Florida"
+          }
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Miami-Dade County",
+          "containedIn": {
+            "@type": "State",
+            "name": "Florida"
+          }
+        }
+      ],
+      "geo": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "26.7153",
+          "longitude": "-80.0534"
+        },
+        "geoRadius": "500000"
+      },
+      "founder": {
+        "@type": "Person",
+        "@id": "https://www.childcustodyconsulting.com/#kristin-tolbert",
+        "name": "Dr. Kristin M. Tolbert",
+        "jobTitle": "Florida Licensed Psychologist & Expert Witness"
+      },
+      "employee": {
+        "@id": "https://www.childcustodyconsulting.com/#kristin-tolbert"
+      },
+      "knowsAbout": [
+        "Florida Statute §61.13 - Best Interests of the Child",
+        "Florida Statute §61.20 - Social Investigations",
+        "Florida Family Law",
+        "Florida Child Custody Law",
+        "Parental Responsibility in Florida",
+        "Time-Sharing in Florida",
+        "Child Custody Psychology",
+        "Child Custody Evaluation",
+        "Parental Alienation",
+        "Narcissistic Abuse in Family Law",
+        "Expert Witness Testimony",
+        "Litigation Consulting"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "ProfessionalService",
+            "name": "Florida Custody Litigation Consulting",
+            "description": "Confidential litigation consulting for Florida family law attorneys under attorney-client privilege, including evaluation critique, cross-examination development, and case strategy aligned with Florida Statute §61.13 factors."
+          },
+          "price": "400",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "400",
+            "priceCurrency": "USD",
+            "unitText": "hour"
+          },
+          "areaServed": {
+            "@type": "State",
+            "name": "Florida"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "ProfessionalService",
+            "name": "Florida Expert Witness Testimony",
+            "description": "Expert witness testimony in Florida family courts on child custody matters, parental alienation, narcissistic abuse patterns, and custody evaluation critique."
+          },
+          "price": "400",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "400",
+            "priceCurrency": "USD",
+            "unitText": "hour"
+          },
+          "areaServed": {
+            "@type": "State",
+            "name": "Florida"
+          }
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Professional License",
+          "name": "Florida Licensed Psychologist",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Florida Board of Psychology"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Expert Witness Qualification",
+          "name": "Expert Witness - Florida Courts"
+        }
+      ],
+      "slogan": "Expert Psychological Consulting for High-Conflict Custody Cases",
+      "sameAs": [
+        "https://www.childcustodyconsulting.com/about-dr-tolbert.html",
+        "https://www.childcustodyconsulting.com/florida-custody-faq.html"
+      ]
+    }
+    </script>
+    <!-- Mobile CTA Bar -->
+    <div class="mobile-cta-bar">
+        <div class="mobile-cta-bar-inner">
+            <a href="tel:+15614292140" class="cta-call">Call 561-429-2140</a>
+            <a href="contact-dr-tolbert.html" class="cta-contact">Request Consultation</a>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
+
+</body>
+</html>
